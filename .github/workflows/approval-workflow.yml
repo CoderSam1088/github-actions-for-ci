@@ -5,3 +5,10 @@ on: pull_request_review
 jobs:
   labelWhenApproved:
     runs-on: ubuntu-latest
+    steps:
+      - uses: keyword
+      - name: my action
+        env:
+          APPROVALS: 1
+          GITHUB_TOKEN: "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"
+          ADD_LABEL: "Finished"
